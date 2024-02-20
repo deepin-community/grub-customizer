@@ -1,0 +1,17 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+reviewers:
+- tsic404
+- myml
+- BLumia
+- Rabenda
+- justforlxz
+- Clansty
+- chenchongbiao
+approvers:
+- Zeno-sole
+- xzl01
+- UTsweetyfish
+- hudeng-go
+- zccrs
+- deepin-community/deepin-sysdev-team
