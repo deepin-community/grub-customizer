@@ -1,0 +1,3 @@
+version=4
+opts=pgpmode=auto \
+https://launchpad.net/grub-customizer .*/grub-customizer[_-](\d\S+)\.tar\.(?:bz2|gz|xz)

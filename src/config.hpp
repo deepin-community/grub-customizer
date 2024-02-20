@@ -1,0 +1,8 @@
+#define BINDIR "/usr/local/bin"
+#define LIBDIR "/usr/local/lib/grub-customizer"
+#define LOCALEDIR "/usr/local/share/locale"
+#define PARTCHOOSER_MOUNTPOINT "/media/grub-customizer_recovery_root_mountpoint"
+#define ERROR_LOG_FILE "/tmp/grub-customizer_mkconfig_output.log"
+#define CUSTOM_SCRIPT_SHEBANG "#!/bin/sh"
+#define CUSTOM_SCRIPT_PREFIX "exec tail -n +3 $0"
+#define GC_VERSION "5.2.3"

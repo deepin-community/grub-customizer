@@ -1,0 +1,19 @@
+Description: add link_libraries("-pie -fPIE") for CMakeLists.txt
+ blhc check will pass.
+Author: xiao sheng wen <atzlinux@sina.com>
+
+Forwarded: not-needed
+Last-Update: 2022-07-08
+---
+
+--- grub-customizer-5.2.1.orig/CMakeLists.txt
++++ grub-customizer-5.2.1/CMakeLists.txt
+@@ -5,6 +5,8 @@ ADD_DEFINITIONS(-std=c++11)
+ 
+ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+ 
++link_libraries("-pie -fPIE")
++
+ find_package(PkgConfig)
+ 
+ pkg_check_modules(GTKMM gtkmm-3.0)
