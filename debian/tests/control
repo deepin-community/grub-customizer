@@ -1,0 +1,2 @@
+Test-Command: grub-customizer -v
+Restrictions: superficial

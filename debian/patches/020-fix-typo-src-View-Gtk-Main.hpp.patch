@@ -1,0 +1,18 @@
+Description: fix typo in src/View/Gtk/Main.hpp
+ currectly --> currently
+Author: xiao sheng wen <atzlinux@sina.com>
+Forwarded: https://bugs.launchpad.net/grub-customizer/+bug/2024140
+Last-Update: 2023-06-16
+
+---
+--- grub-customizer-5.2.3.orig/src/View/Gtk/Main.hpp
++++ grub-customizer-5.2.3/src/View/Gtk/Main.hpp
+@@ -556,7 +556,7 @@ class View_Gtk_Main : public View_Main {
+ 	public: void showProxyNotFoundMessage()
+ 	{
+ 		Gtk::MessageDialog msg(gettext("Proxy binary not found!"), false, Gtk::MESSAGE_WARNING);
+-		msg.set_secondary_text(gettext("You will see all entries (uncustomized) when you run grub. This error accurs (in most cases), when you didn't install grub gustomizer currectly."));
++		msg.set_secondary_text(gettext("You will see all entries (uncustomized) when you run grub. This error accurs (in most cases), when you didn't install grub gustomizer currently."));
+ 		msg.run();
+ 	}
+ 

@@ -1,5 +1,91 @@
-template-repository (1.0-1) unstable; urgency=medium
+grub-customizer (5.2.3-1) unstable; urgency=medium
 
-  * Initial release
+  [ xiao sheng wen(肖盛文) ]
+  * New upstream version 5.2.3
+  * Bump Standards-Version: 4.6.2
+  * d/copyright: update copyright year info to 2023
+  * d/control: set Depends only to pkexec on Trixie
+    see: https://lists.debian.org/debian-devel/2022/10/msg00211.html
+  * add d/p/020-fix-typo-src-View-Gtk-Main.hpp.patch
+  * Run wrap-and-sort -asbkt
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- xiao sheng wen <atzlinux@sina.com>  Fri, 16 Jun 2023 14:56:09 +0800
+
+grub-customizer (5.2.2-2) unstable; urgency=medium
+
+  * set Depends to pkexec | policykit-1 (Closes: #1025569)
+    see: https://lists.debian.org/debian-devel/2022/10/msg00211.html
+  * d/control: not use the full version number in the Standards-Version field
+    only require the first 3 components to be specified
+
+ -- xiao sheng wen <atzlinux@sina.com>  Wed, 07 Dec 2022 12:25:58 +0800
+
+grub-customizer (5.2.2-1) unstable; urgency=medium
+
+  * d/watch: add opts=pgpmode=auto
+  * add debian/upstream/signing-key.asc
+  * New upstream version 5.2.2
+  * refreash patch for new upstream applied
+
+ -- xiao sheng wen <atzlinux@sina.com>  Fri, 09 Sep 2022 10:00:41 +0800
+
+grub-customizer (5.2.1-2) unstable; urgency=medium
+
+  * add d/clean for clean src/config.hpp
+  * add d/p/020-fix-ftbfs-gcc-12.patch(Closes: #1012941)
+
+ -- xiao sheng wen <atzlinux@sina.com>  Fri, 29 Jul 2022 23:08:54 +0800
+
+grub-customizer (5.2.1-1) unstable; urgency=medium
+
+  * New maintainer (Closes: #1013284)
+  * d/copyright: add 2022 xiao sheng wen <atzlinux@sina.com>
+  * New upstream version 5.2.1 (Closes: #1010165)
+  * delete d/source/options, useless in new upstream version
+  * Update standards version to 4.6.1.0, no changes needed.
+  * d/control: +Enhances: grub-efi, grub-pc, grub-legacy(Closes: #914349)
+  * add d/p/010-add-link_libraries-CMakeLists.txt.patch
+  * add d/gbp.conf
+
+ -- xiao sheng wen <atzlinux@sina.com>  Mon, 11 Jul 2022 21:35:16 +0800
+
+grub-customizer (5.1.0-4) unstable; urgency=medium
+
+  * QA upload.
+  * Set Debian QA Group as maintainer. (See #1013284)
+  * debian/control: bumped Standards-Version to 4.6.0.
+  * debian/copyright: updated packaging copyright years.
+  * debian/tests/control: removed a test using ampersand to run in background.
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Mon, 20 Jun 2022 17:36:23 -0300
+
+grub-customizer (5.1.0-3) unstable; urgency=medium
+
+  * debian/control: migrated DH level to 13.
+  * debian/rules: removed DEB_LDFLAGS_MAINT_APPEND variable because all
+    options are default in dpkg and debhelper.
+  * debian/tests/control: set a CI test as superficial.
+  * debian/upstream/metadata: created.
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Fri, 18 Sep 2020 22:50:51 -0300
+
+grub-customizer (5.1.0-2) unstable; urgency=medium
+
+  * Using new DH level format. Consequently:
+      - debian/compat: removed.
+      - debian/control: changed from 'debhelper' to 'debhelper-compat' in
+        Build-Depends field and bumped level to 12.
+  * debian/control:
+      - Added 'Rules-Requires-Root: no' to source stanza.
+      - Bumped Standards-Version to 4.5.0.
+  * debian/copyright: updated packaging copyright years.
+  * debian/salsa-ci.yml: added to provide CI tests for Salsa.
+  * debian/tests/control: added a new test.
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Mon, 24 Feb 2020 13:59:30 -0300
+
+grub-customizer (5.1.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #619826)
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Sat, 13 Oct 2018 10:36:05 -0300
