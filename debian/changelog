@@ -1,3 +1,9 @@
+grub-customizer (5.2.3-1deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:48:48 +0800
+
 grub-customizer (5.2.3-1) unstable; urgency=medium
 
   [ xiao sheng wen(肖盛文) ]
